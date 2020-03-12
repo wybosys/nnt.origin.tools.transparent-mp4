@@ -55,8 +55,8 @@ if __name__ == "__main__":
     inf = sys.argv[1]
     outf = sys.argv[2]
     shutil.os.makedirs('tmp', exist_ok=True)
-    #out_mp4_frames(inf, 'tmp/frames')
-    #transparents('tmp/frames', 'tmp/pngs')
-    #overlays('tmp/pngs', 'tmp/overlays', 0x00ff00ff)
+    out_mp4_frames(inf, 'tmp/frames')
+    transparents('tmp/frames', 'tmp/pngs')
+    overlays('tmp/pngs', 'tmp/overlays', 0x00ff00ff)
     compose('tmp/overlays', outf)
-    #shutil.os.removedirs('tmp')
+    shutil.os.removedirs('tmp')
