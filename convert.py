@@ -59,4 +59,4 @@ if __name__ == "__main__":
     transparents('tmp/frames', 'tmp/pngs')
     overlays('tmp/pngs', 'tmp/overlays', 0x00ff00ff)
     compose('tmp/overlays', outf)
-    shutil.os.removedirs('tmp')
+    shutil.rmtree('tmp')
